@@ -1,0 +1,5 @@
+FILE(GLOB_RECURSE SOURCES *.cs)
+FILE(GLOB_RECURSE SWIG_SOURCES ../Swig/*.cs)
+
+ADD_CUSTOM_TARGET(BuildNeoSharp ALL
+					mcs -t:library -out:${BINARY_OUTPUT}/NeoSharp.dll ${SOURCES} ${SWIG_SOURCES})
