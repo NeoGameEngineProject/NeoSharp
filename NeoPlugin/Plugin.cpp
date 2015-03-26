@@ -25,9 +25,9 @@ extern "C" void StartPlugin()
 
 	// Load our assembly
 	monoContext->loadAssembly("NeoSharp.dll");
-
+	monoContext->addAssembly("MonoGame.dll");
 	// Load external assembly with game specific code
-	monoContext->callMethod("NeoGame:loadExternalAssembly()");
+	//monoContext->callMethod("NeoGame:loadExternalAssembly()");
 }
 
 extern "C" void EndPlugin()

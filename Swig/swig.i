@@ -4,29 +4,29 @@
 	using namespace Neo;
 %}
 
-%include <MCore.h>
-%include <MUtils.h>
+%include <NeoCore.h>
+%include <Utils.h>
 
-%include <MMaths.h>
-%include <MVector2.h>
-%include <MVector3.h>
-%include <MVector4.h>
-%include <MColor.h>
-%include <MMatrix4x4.h>
-%include <MQuaternion.h>
+%include <Maths.h>
+%include <Vector2.h>
+%include <Vector3.h>
+%include <Vector4.h>
+%include <Color.h>
+%include <Matrix4x4.h>
+%include <Quaternion.h>
 
 
-%include <MSystemContext.h>
-%include <MInputContext.h>
-%include <MRenderingContext.h>
-%include <MSoundContext.h>
-%include <MPhysicsContext.h>
-%include <MScriptContext.h>
-%include <MImage.h>
-%include <MSound.h>
-%include <MStringTools.h>
-%include <MDataManager.h>
-%include <MDataLoader.h>
+%include <SystemContext.h>
+%include <InputContext.h>
+%include <RenderingContext.h>
+%include <SoundContext.h>
+%include <PhysicsContext.h>
+%include <ScriptContext.h>
+%include <Image.h>
+%include <Sound.h>
+%include <StringTools.h>
+%include <DataManager.h>
+%include <DataLoader.h>
 
 %include <NeoEngine.h>
 %include <Level.h>

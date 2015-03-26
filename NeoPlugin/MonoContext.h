@@ -16,6 +16,8 @@ public:
 	virtual ~MonoContext();
 
 	void loadAssembly(const char* path);
+	void addAssembly(const char* path);
+
 	void callMethod(const char* name);
 	void attachToThread();
 

@@ -29,7 +29,21 @@ void MonoContext::loadAssembly(const char* path)
 		return;
 	}
 
+}
 
+void MonoContext::addAssembly(const char* path)
+{
+	if(!path || !domain)
+		return;
+
+	// FIXME: More fine grained control over what assembly to use!
+	assembly = mono_domain_assembly_open(domain, path);
+
+	if(!assembly)
+	{
+		MLOG_ERROR("Could not load assembly: " << path);
+		return;
+	}
 }
 
 void MonoContext::callMethod(const char* name)

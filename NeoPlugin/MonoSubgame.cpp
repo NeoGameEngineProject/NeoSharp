@@ -16,16 +16,16 @@ MonoSubgame::~MonoSubgame()
 void MonoSubgame::onBegin()
 {
 	MLOG_INFO("Initializing MonoSubgame");
-	MonoContext::getInstance()->callMethod("NeoGame:onBegin()");
+	MonoContext::getInstance()->callMethod("Game:onBegin()");
 }
 
 void MonoSubgame::update()
 {
-	MonoContext::getInstance()->callMethod("NeoGame:update()");
+	MonoContext::getInstance()->callMethod("Game:update()");
 }
 
 void MonoSubgame::onEnd()
 {
 	MLOG_INFO("Cleaning up MonoSubgame");
-	MonoContext::getInstance()->callMethod("NeoGame:onEnd()");
+	MonoContext::getInstance()->callMethod("Game:onEnd()");
 }
